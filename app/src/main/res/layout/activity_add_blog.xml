@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="791dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="-364dp"
+        android:layout_marginBottom="-136dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cercle" />
+
+    <ImageView
+        android:id="@+id/imageuser"
+        android:layout_width="243dp"
+        android:layout_height="222dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="390dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/usser" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="15dp"
+        android:background="#2C7873"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/title_app"
+            android:layout_width="463dp"
+            android:layout_height="125dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="10dp"
+            android:text="Add Reclamation"
+            android:fontFamily="@font/dancing_bold"
+            android:textColor="@color/black"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="223dp"
+        android:layout_height="79dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="271dp"
+        android:layout_marginEnd="-22dp"
+        android:hint="Titre"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="470dp"
+        android:layout_height="184dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="369dp"
+        android:layout_marginEnd="6dp"
+        android:hint="   Description"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <Button
+        android:id="@+id/buttonAddBlog"
+        android:layout_width="278dp"
+        android:layout_height="89dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="610dp"
+        android:layout_marginEnd="125dp"
+        android:backgroundTint="#F9B34C"
+        android:text="Ajouter"
+        android:textColor="#000000"
+        android:fontFamily="@font/dm_medium"
+        android:textSize="40dp" />
+</RelativeLayout>

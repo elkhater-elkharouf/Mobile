@@ -1,0 +1,35 @@
+<!-- res/layout/activity_add_candidature.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".candidature.ui.admin.UpdateCandidatureAdminActivity">
+
+    <TextView
+        android:id="@+id/topTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Update Candidature"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <!-- Etat -->
+    <Spinner
+        android:id="@+id/spinnerEtat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/etat_options" />
+
+    <!-- Add Candidature Button -->
+    <Button
+        android:id="@+id/buttonManageCandidature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Update" />
+
+</LinearLayout>

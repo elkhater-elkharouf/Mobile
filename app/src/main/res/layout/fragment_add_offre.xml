@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/fragment_add_offre.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".offres.uiRecruteur.AddOffreFragment">
+
+    <EditText
+        android:id="@+id/editTitleJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titre du poste"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTypeJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type d'emploi"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editNameCompagny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom de la société"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Emplacement de la société"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editLocationCompagny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+        <ImageView
+            android:id="@+id/iconLocation"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_outline_location_on_24"/> <!-- Replace with your location icon -->
+    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:id="@+id/companyUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="company Url"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/jobDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description de l'offre"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/btnChooseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choisir une image"
+        android:layout_gravity="center"
+        android:onClick="onChooseImage"/>
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer"
+        android:layout_gravity="center"
+        android:onClick="onSaveButtonClick"/>
+
+    <ImageView
+        android:id="@+id/imgGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

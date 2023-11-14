@@ -1,0 +1,54 @@
+<!-- res/layout/item_question.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question Text" />
+
+    <TextView
+        android:id="@+id/textViewOption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Options: A" />
+    <TextView
+        android:id="@+id/textViewOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Options: B" />
+    <TextView
+        android:id="@+id/textViewOption3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Options: C" />
+
+    <TextView
+        android:id="@+id/textViewDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty: Medium" />
+    <!-- Add more TextViews, Buttons, or other views for additional question details -->
+
+    <!-- Bouton "Supprimer" en rouge -->
+    <!-- Bouton "Modifier" en bleu -->
+    <Button
+        android:id="@+id/btnModifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2196F3"
+        android:text="Modifier" />
+    <!-- Bouton "Supprimer" en rouge -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supprimer"
+        android:backgroundTint="#F44336"/>
+
+</LinearLayout>
